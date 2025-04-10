@@ -1,0 +1,79 @@
+/* Reset básico */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #c4c0c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #d8d8d8;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 600px; /* Largura maior para acomodar dois quadros */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.calculadora {
+    display: flex;
+    justify-content: space-around; /* Distribui os quadros horizontalmente */
+}
+
+.quadro {
+    width: 45%; /* Largura para cada quadro (deixa um espaço entre eles) */
+    padding: 20px;
+    border: 1px solid #868686;
+    border-radius: 5px;
+    text-align: left; /* Alinha o texto à esquerda dentro do quadro */
+}
+
+.quadro h2 {
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center; /* Centraliza o título do quadro */
+}
+
+.inputs input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.inputs button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    width: 100%; /* Ocupa toda a largura do quadro */
+}
+
+.inputs button:hover {
+    background-color: #367c39;
+}
+
+.resultado p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+}
